@@ -25,7 +25,7 @@ app.get("/filteredimage", async (req, res) => {
             const filteredImage = await filterImageFromURL(image_url);
 
             //send the resulting file in the response
-            res.sendFile(filteredImage);
+            res.status(200).sendFile(filteredImage);
 
             res.on('finish', function () {
                 // clear local files on finish response
