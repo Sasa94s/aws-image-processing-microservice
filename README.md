@@ -47,7 +47,7 @@ http://image-processing-microservice-dev.us-west-2.elasticbeanstalk.com/filtered
 
 ---
 
-http://image-processing-microservice-dev.us-west-2.elasticbeanstalk.com/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg
+http://image-processing-microservice-dev.us-west-2.elasticbeanstalk.com/filteredimage?image_url=https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg
 
 ## License
 
