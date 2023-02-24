@@ -45,6 +45,10 @@ Open in browser:
 
 http://image-processing-microservice-dev.us-west-2.elasticbeanstalk.com/filteredimage?image_url=https://avatars.githubusercontent.com/u/13010388
 
+---
+
+http://image-processing-microservice-dev.us-west-2.elasticbeanstalk.com/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg
+
 ## License
 
 [License](LICENSE.txt)
