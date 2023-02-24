@@ -1,4 +1,4 @@
-# Full Stack Apps on AWS Project
+# Image Processing Microservice
 
 Assume you have been hired as a software engineer to develop an application that will help the FBI find missing people.  The application will upload images to the FBI cloud database hosted in AWS. This will allow the FBI to run facial recognition software on the images to detect a match. A NodeJS server is developed and deployed on AWS Elastic Beanstalk. 
 A REST API endpoint is implemented in a backend service that processes incoming image URLs.
@@ -15,6 +15,11 @@ To complete this project, you will need to:
 ```shell
 cd image-processing-microservice
 npm i
+```
+
+* Run application locally
+```shell
+npm start
 ```
 
 * Deploying your system 
