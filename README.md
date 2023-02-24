@@ -28,7 +28,7 @@ eb init
 eb create
 eb deploy
 ```
-Check [eb.md](./eb.md) or [deployment-sample directory](./deployment-sample) for commands output sample
+Check [eb.md](./eb.md) or [deployment_screenshot directory](./deployment_screenshot) for deployment output sample
 
 
 ## Testing
