@@ -1,23 +1,44 @@
 # Full Stack Apps on AWS Project
 
-You have been hired as a software engineer to develop an application that will help the FBI find missing people.  The application will upload images to the FBI cloud database hosted in AWS. This will allow the FBI to run facial recognition software on the images to detect a match. You will be developing a NodeJS server and deploying it on AWS Elastic Beanstalk. 
-You will build upon the application we've developed during the lessons in this course. You'll complete a REST API endpoint in a backend service that processes incoming image URLs.
+Assume you have been hired as a software engineer to develop an application that will help the FBI find missing people.  The application will upload images to the FBI cloud database hosted in AWS. This will allow the FBI to run facial recognition software on the images to detect a match. A NodeJS server is developed and deployed on AWS Elastic Beanstalk. 
+A REST API endpoint is implemented in a backend service that processes incoming image URLs.
 
 ## Getting Started
 
-You can clone this repo to run the project locally, or navigate to the workspace in the Udacity course.
+You can clone this repo to run the project locally, or test live through Elastic Beanstalk deployment.
 
 ## Project Instructions
 
 To complete this project, you will need to:
 
 * Set up node environment
-* Create a new endpoint in the server.js file
-* Deploying your system
+```shell
+cd image-processing-microservice
+npm i
+```
+
+* Deploying your system 
+```shell
+eb init
+eb create
+eb deploy
+```
+Check [eb.md](./eb.md) for commands output sample
+
 
 ## Testing
 
-Successful URL responses should have a 200 code. Ensure that you include error codes for the scenario that someone uploads something other than an image and for other common errors.
+* Test the REST endpoint located in the [server.js](./image-processing-microservice/server.js) file
+```shell
+curl --request GET 'http://image-processing-microservice-dev.us-west-2.elasticbeanstalk.com/filteredimage?image_url=https://avatars.githubusercontent.com/u/13010388' --output filteredimage.jpg
+```
+Successful URL responses should have a 200 code. Error codes is returned for the scenario that someone uploads something other than an image and for other common errors.
+
+or
+
+Open in browser:
+
+http://image-processing-microservice-dev.us-west-2.elasticbeanstalk.com/filteredimage?image_url=https://avatars.githubusercontent.com/u/13010388
 
 ## License
 
